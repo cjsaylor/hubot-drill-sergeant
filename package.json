@@ -1,0 +1,21 @@
+{
+  "name": "hubot-drill-sergeant",
+  "version": "0.1.0",
+  "description": "Robot plugin for showing stale PRs with Drill Sergeant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hubot",
+    "stale",
+    "pull",
+    "requests"
+  ],
+  "author": "Chris Saylor <cjsaylor@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "drill-sergeant": "^0.2.0",
+    "node-schedule": "^0.1.15"
+  }
+}
