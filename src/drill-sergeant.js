@@ -50,7 +50,7 @@ module.exports = function(robot) {
 		staleRepos.forEach(function(result) {
 			output.push(result.repo + ':');
 			result.prs.forEach(function(pr) {
-				output.push('<a href="' + pr.html_url + '">' + pr.title + ' (' + pr.user + ')</a>');
+				output.push(pr.title + '(' + pr.user + ') ' + pr.html_url);
 			});
 		});
 		sender(output.join('\n'));
