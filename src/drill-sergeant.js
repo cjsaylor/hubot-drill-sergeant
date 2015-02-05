@@ -48,9 +48,9 @@ module.exports = function(robot) {
 	var broadcastStale = function(sender, staleRepos) {
 		var output = [];
 		staleRepos.forEach(function(result) {
-			output.push(result.repo + ':');
+			output.push('\n' + result.repo + ':\n');
 			result.prs.forEach(function(pr) {
-				output.push(pr.title + '(' + pr.user + ') ' + pr.html_url);
+				output.push(pr.title + ' (' + pr.user + ') ' + pr.html_url);
 			});
 		});
 		sender(output.join('\n'));
