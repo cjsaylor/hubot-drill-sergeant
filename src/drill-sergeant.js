@@ -25,7 +25,7 @@ var schedule = require('node-schedule');
 module.exports = function(robot) {
 	var token = process.env.HUBOT_DRILL_SERGEANT_GITHUB_TOKEN;
 	var staleTime = process.env.HUBOT_DRILL_SERGEANT_STALE_TIME || 24;
-	var repos = (process.env.HUBOT_DRILL_SERGEANT_REPOS || []).split(',');
+	var repos = (process.env.HUBOT_DRILL_SERGEANT_REPOS || '').split(',');
 	var crontab = process.env.HUBOT_DRILL_SERGEANT_SCHEDULE || '10 * * * *';
 	var announcementRoom = process.env.HUBOT_DRILL_SERGEANT_ROOM;
 	var client;
